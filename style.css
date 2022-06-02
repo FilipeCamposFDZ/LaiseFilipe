@@ -1,0 +1,204 @@
+/* .main{
+    background-color:#ffeeac;
+    width: 80vw;
+}
+
+.main__header{
+    width: 100%;
+}
+
+.local{
+    text-align: center;
+    background-color: aquamarine;
+} */
+
+:root{
+    --cor-um: #a34f2b;
+    --cor-dois: #d6a992;
+    --cor-tres: #e9d3bf;
+    --cor-quatro: #e9e2d8;
+}
+
+@font-face {
+    font-family: 'Bernardo-normal';
+    src: url(Bernardo\ Moda.ttf);
+}
+@font-face {
+    font-family: 'Bernardo-Bold';
+    src: url(Bernardo\ Moda\ Bold.ttf);
+}
+@font-face {
+    font-family: 'Bernardo-Semi';
+    src: url(Bernardo\ Moda\ Semibold.ttf);
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-quatro);
+    font-family: 'Bernardo-normal';
+    font-size: 22px;
+    text-shadow: 0.3px 0.3px rgba(0, 0, 0, 0.8);
+}
+
+.capa{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bernardo-Bold';
+}
+
+.capa h1{
+    font-size: 8rem;
+    color: rgb(42, 42, 42);
+    text-shadow: 0.1px 0.1px rgb(235, 235, 235);
+    margin-bottom: 8.5rem;
+}
+.capa h2{
+    font-size: 8rem;
+}
+
+.conteudo{
+    padding: 18px 25px;
+    font-size: 1.5rem;
+    font-family: 'Bernardo-Semi';
+    background-color: var(--cor-quatro);
+    color: rgb(36, 36, 36);
+    text-shadow: 0.1px 0.2px rgb(235, 235, 235);
+}
+
+.header{
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-dois);
+    font-size: 1.8rem;
+    color: var(--cor-quatro);
+    font-family: 'Bernardo-Semi';
+    z-index: 1;
+}
+.nav-link{
+    color: var(--cor-quatro);
+}
+
+
+.capa.data{
+    background-image: url(Montagem2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.btn-dias, .btn-presente{
+    font-size: 2rem;
+    font-family: 'Bernardo-Bold';
+    margin-top: 20px;
+    background-color: var(--cor-um);
+    border: none;
+    color: var(--cor-quatro);
+}
+
+.btn-presente{
+    font-size: 1.2rem;
+}
+
+.capa.local{
+    background-image: url(Montagem1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 1% 15%;
+}
+
+.local{
+    /* background-color: #e1b365; */
+    margin: 0 auto;
+}
+.local p{
+    padding:1rem;
+}
+
+.carrossel{
+    width: 100%;
+    height: 90%;
+}
+
+.capa.programacao{
+    background-image: url(IMG_0614.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.capa.hospedagem{
+    background-image: url(image1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.capa.roupas{
+    background-image: url(Montagem3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.capa.presenca{
+    background-image: url(casal2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.capa.presentes{
+    background-image: url(casal2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+strong{
+    font-family: 'Bernardo-Bold';
+}
+
+@media (max-width: 576px){
+    .capa h2, .capa h1{
+        font-size: 4rem;
+    }
+    .conteudo.local{
+        padding: 10px 0px;
+    }
+    .capa.data{
+        background-position: -100px;
+    }
+    .capa.programacao{
+        background-position: -350px;
+    }
+    .capa.hospedagem{
+        background-position: -330px;
+    }
+    .capa.local{
+        background-position: -100px;
+    }
+    .capa.roupas{
+        background-position: -50px;
+    }
+    .capa.presenca{
+        background-position: -100px;
+    }
+    .capa.presentes{
+        background-position: -100px;
+    }
+}
